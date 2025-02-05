@@ -46,23 +46,24 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
             <h1 className="hero__title">The complete reference for AI-Powered Development</h1>
+            <div className={styles.heroMobileAnimation}>
+              <HeroAnimation />
+            </div>
             <p className="hero__subtitle">
               Build applications capable of shipping features faster than ever before. Simple. Efficient. Reliable.
             </p>
             <div className={styles.headerButtons}>
-              <Link
-                className="button button--primary button--lg"
-                to="/docs/intro">
+              <Link className="button button--primary button--lg" to="/docs/intro">
                 Get Started
               </Link>
-              <Link
-                className="button button--secondary button--lg"
-                to="/docs/tutorial">
+              <Link className="button button--secondary button--lg" to="/docs/tutorial">
                 Start Building
               </Link>
             </div>
           </div>
-          <HeroAnimation />
+          <div className={styles.heroDesktopAnimation}>
+            <HeroAnimation />
+          </div>
         </div>
       </div>
     </header>

@@ -23,6 +23,14 @@
   max-width: 600px;
 }
 
+.heroMobileAnimation {
+  display: none;
+}
+
+.heroDesktopAnimation {
+  display: block;
+}
+
 .heroBanner h1 {
   color: #ffffff;
   font-weight: 700;
@@ -189,6 +197,15 @@
   height: 80px;
 }
 
+/* Desktop styles */
+.mobileHeroTitle {
+  display: none; /* Hidden by default */
+}
+
+.desktopHeroTitle {
+  display: block;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
@@ -201,9 +218,17 @@
   }
 
   .heroText {
-    order: 2;
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .heroMobileAnimation {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .heroDesktopAnimation {
+    display: none;
   }
 
   .heroBanner h1 {
@@ -220,25 +245,20 @@
   .headerButtons {
     justify-content: center;
     margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
   }
 
-  .heroAnimation {
-    order: 1;
-    margin-bottom: 2rem;
-  }
-
-  .featuresGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .resourcesGrid {
-    grid-template-columns: 1fr;
+  .headerButtons .button {
+    flex: 1; /* Make buttons take equal width */
+    text-align: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 480px) {
   .heroBanner {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .heroBanner h1 {
@@ -248,7 +268,6 @@
   .headerButtons {
     flex-direction: column;
     gap: 0.75rem;
-    width: 100%;
     max-width: 300px;
   }
 
