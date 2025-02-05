@@ -577,3 +577,50 @@ div[class^='codeBlockContainer'] {
 .neural-network .pulse-2 {
   animation-delay: 1s;
 }
+
+/* Mobile navbar fixes */
+@media screen and (max-width: 996px) {
+  /* Ensure the mobile menu is visible when opened */
+  .navbar-sidebar {
+    background-color: var(--ifm-navbar-background-color);
+    height: 100vh;
+    transform: translate3d(0, 0, 0);
+    z-index: 100000;
+  }
+
+  /* Style the menu items in mobile view */
+  .navbar-sidebar__items {
+    padding: 0.5rem;
+  }
+
+  .navbar-sidebar__item {
+    padding: 0.5rem;
+  }
+
+  /* Ensure links are visible in mobile menu */
+  .navbar-sidebar__items .navbar__link {
+    color: var(--ifm-color-primary) !important;
+    display: block;
+    padding: 0.75rem;
+  }
+
+  /* Style active and hover states */
+  .navbar-sidebar__items .navbar__link:hover,
+  .navbar-sidebar__items .navbar__link--active {
+    background: rgba(0, 245, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  /* Ensure the backdrop is visible */
+  .navbar-sidebar__backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+  }
+}
+
+/* Ensure dropdown menus are visible */
+.dropdown__menu {
+  background: var(--ifm-navbar-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: var(--ifm-dropdown-shadow);
+}

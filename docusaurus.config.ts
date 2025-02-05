@@ -77,6 +77,8 @@ const config: Config = {
         src: 'img/logo-dark.svg',
         srcDark: 'img/logo.svg',
       },
+      hideOnScroll: false,
+      style: 'dark',
       items: [
         {
           type: 'docSidebar',
