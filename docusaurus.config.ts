@@ -87,7 +87,7 @@ const config: Config = {
           label: 'Concept Library',
         },
         {to: '/prompts', label: 'AI Prompts', position: 'left'},
-        {to: '/blog', label: 'Podcasts', position: 'left'},
+        {to: '/podcasts', label: 'Podcasts', position: 'left'},
         {
           href: 'https://github.com/AutoNateAI/Shippe-Coder',
           label: 'GitHub',

@@ -707,3 +707,43 @@ div[class^='codeBlockContainer'] {
 .privacy-policy li {
   margin-bottom: 0.5rem;
 }
+
+/* Podcast Page Styles */
+.podcast-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+  background: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.podcast-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+  color: var(--ifm-color-primary);
+}
+
+.podcast-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+}
+
+.player-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.audio-player {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* Content styles are handled by Docusaurus markdown styling */
