@@ -6,7 +6,7 @@ sidebar_position: 1
 
 <div class="feature-grid">
   <div class="feature-card">
-    <svg class="feature-icon" viewBox="0 0 100 100">
+    <svg class="feature-icon" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
       <circle class="pulse" cx="50" cy="50" r="40" 
         fill="none" 
         stroke="var(--ifm-color-primary)" 
@@ -31,7 +31,7 @@ sidebar_position: 1
 In today's rapidly evolving development landscape, the intersection of AI and project management is revolutionizing how we build software. This documentation library serves as your comprehensive guide to mastering modern development practices, where AI tools become an extension of your capabilities rather than just another set of tools.
 
 <div class="workflow-animation">
-  <svg width="800" height="400" viewBox="0 0 800 400">
+  <svg class="neural-network-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
     <!-- Neural Network -->
     <g class="neural-network">
       <!-- Input Layer -->

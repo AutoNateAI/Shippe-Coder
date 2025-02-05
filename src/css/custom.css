@@ -462,9 +462,9 @@ div[class^='codeBlockContainer'] {
 }
 
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 
 .integration-diagram {
@@ -623,4 +623,46 @@ div[class^='codeBlockContainer'] {
   background: var(--ifm-navbar-background-color);
   border: 1px solid var(--ifm-color-emphasis-200);
   box-shadow: var(--ifm-dropdown-shadow);
+}
+
+/* Responsive SVG styles */
+.workflow-animation {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.neural-network-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust feature grid for mobile */
+@media screen and (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    max-width: 80px;
+  }
+}
+
+/* Ensure SVGs scale properly on different screen sizes */
+@media screen and (max-width: 480px) {
+  .workflow-animation {
+    margin: 1rem auto;
+  }
+  
+  .neural-network .node {
+    r: 8; /* Slightly smaller nodes on mobile */
+  }
+  
+  .neural-network .connection {
+    stroke-width: 1; /* Thinner connections on mobile */
+  }
 }
