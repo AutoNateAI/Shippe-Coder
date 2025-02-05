@@ -74,7 +74,7 @@ const config: Config = {
       title: 'Shippi',
       logo: {
         alt: 'Shippi Logo',
-        src: 'img/logo-dark.svg',
+        src: 'img/logo.svg',
         srcDark: 'img/logo.svg',
       },
       hideOnScroll: false,
