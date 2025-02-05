@@ -69,7 +69,7 @@ const config: Config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    image: 'img/social-card.jpg',
+    image: 'img/social-card.png',
     navbar: {
       title: 'Shippi',
       logo: {
@@ -141,29 +141,24 @@ const config: Config = {
       ],
     },
     metadata: [
-      // Twitter Card metadata
+      // Twitter Card
       {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:site', content: '@ShippiAI'},
-      {name: 'twitter:title', content: 'Shippi - Ship Better Code, Faster'},
-      {name: 'twitter:description', content: 'Learn how to leverage AI-enhanced development practices to ship better code faster.'},
-      {name: 'twitter:image', content: 'https://autonateai.github.io/Shippe-Coder/img/social-card.jpg'},
+      {name: 'twitter:title', content: 'Shippi - AI Dev Docs'},
+      {name: 'twitter:description', content: 'Ship Better Code, Faster'},
+      {name: 'twitter:image', content: 'https://autonateai.github.io/Shippe-Coder/img/social-card.png'},
       
-      // Open Graph metadata (Facebook, iMessage, LinkedIn)
+      // Open Graph (Facebook, iMessage, etc)
       {property: 'og:type', content: 'website'},
-      {property: 'og:site_name', content: 'Shippi'},
-      {property: 'og:title', content: 'Shippi - Ship Better Code, Faster'},
-      {property: 'og:description', content: 'Learn how to leverage AI-enhanced development practices to ship better code faster.'},
+      {property: 'og:title', content: 'Shippi - AI Dev Docs'},
+      {property: 'og:description', content: 'Ship Better Code, Faster'},
+      {property: 'og:image', content: 'https://autonateai.github.io/Shippe-Coder/img/social-card.png'},
+      {property: 'og:image:alt', content: 'Shippi Logo'},
       {property: 'og:url', content: 'https://autonateai.github.io/Shippe-Coder/'},
-      {property: 'og:image', content: 'https://autonateai.github.io/Shippe-Coder/img/social-card.jpg'},
-      {property: 'og:image:alt', content: 'Shippi - AI-Enhanced Development'},
-      {property: 'og:image:width', content: '1200'},
-      {property: 'og:image:height', content: '630'},
+      {property: 'og:site_name', content: 'Shippi'},
       
-      // iOS specific
+      // Apple-specific
       {name: 'apple-mobile-web-app-title', content: 'Shippi'},
       {name: 'apple-mobile-web-app-capable', content: 'yes'},
-      {name: 'theme-color', content: '#00F5FF'},
-      {name: 'msapplication-TileColor', content: '#00F5FF'},
     ],
   } satisfies Preset.ThemeConfig,
 };
