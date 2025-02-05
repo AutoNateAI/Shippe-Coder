@@ -57,20 +57,24 @@ function HomepageHeader() {
               AI-assisted descriptions, and code-to-issue traceability - all where you need it.
             </p>
             <div className={styles.headerButtons}>
-              <Link 
+              <a 
+                href="https://github.com/tristinrybakVU/shippi-smartcomment-assistant"
                 className="button button--primary button--lg" 
-                to="/docs/vscode-extension/install"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <VSCodeIcon />
                 VSCode Extension
-              </Link>
-              <Link 
-                className="button button--secondary button--lg" 
-                to="/docs/chrome-extension/install"
+              </a>
+              <a 
+                href="https://github.com/tristinrybakVU/shippi-smartticket-assistant"
+                className="button button--secondary button--lg"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <ChromeIcon />
                 Chrome Extension
-              </Link>
+              </a>
             </div>
           </div>
           <div className={styles.heroDesktopAnimation}>
@@ -99,7 +103,7 @@ function MainContent() {
             icon={<CodeGenerationIcon />}
             title="VSCode Extension"
             description="AI-powered issue management integrated directly in your development workflow with code-to-issue traceability."
-            link="/docs/vscode-extension"
+            link="https://github.com/tristinrybakVU/shippi-smartcomment-assistant"
             linkText="Start Coding"
           />
           <FeatureCard
@@ -139,20 +143,24 @@ function MainContent() {
             <p>Join developers who are shipping faster with AI-powered project management</p>
           </div>
           <div className={styles.ctaBannerButtons}>
-            <Link 
+            <a 
+              href="https://github.com/tristinrybakVU/shippi-smartcomment-assistant" 
               className={styles.vscodeButton} 
-              to="/docs/vscode-extension/install"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <VSCodeIcon />
               VSCode Extension
-            </Link>
-            <Link 
-              className={styles.chromeButton} 
-              to="/docs/chrome-extension/install"
+            </a>
+            <a 
+              href="https://github.com/tristinrybakVU/shippi-smartticket-assistant" 
+              className={styles.chromeButton}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <ChromeIcon />
-              Chrome Extension
-            </Link>
+              Install Chrome Extension
+            </a>
           </div>
         </div>
       </section>
@@ -201,14 +209,24 @@ function MainContent() {
         <h2>Ready to Transform Your Workflow?</h2>
         <p>Join thousands of developers using Shippi to streamline their development process.</p>
         <div className={styles.extensionButtons}>
-          <Link className={styles.chromeButton} to="/docs/chrome-extension/install">
+          <a 
+            href="https://github.com/tristinrybakVU/shippi-smartticket-assistant" 
+            className={styles.chromeButton}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ChromeIcon />
             Install Chrome Extension
-          </Link>
-          <Link className={styles.vscodeButton} to="/docs/vscode-extension/install">
+          </a>
+          <a
+            className={styles.vscodeButton} 
+            href="https://github.com/tristinrybakVU/shippi-smartcomment-assistant"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <VSCodeIcon />
             Install VSCode Extension
-          </Link>
+          </a>
         </div>
       </section>
     </div>
@@ -221,13 +239,15 @@ function FloatingCTA() {
       <div className={styles.floatingCTAContent}>
         <span>Ready to streamline your workflow?</span>
         <div className={styles.floatingCTAButtons}>
-          <Link 
+          <a
             className={styles.floatingVSCodeButton} 
-            to="/docs/vscode-extension/install"
+            href="https://github.com/tristinrybakVU/shippi-smartcomment-assistant"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <VSCodeIcon />
             Install VSCode Extension
-          </Link>
+          </a>
         </div>
       </div>
     </div>

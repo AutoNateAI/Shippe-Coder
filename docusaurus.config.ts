@@ -138,8 +138,21 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Products',
+          items: [
+            {
+              label: 'Chrome Extension',
+              href: 'https://github.com/tristinrybakVU/shippi-smartticket-assistant',
+            },
+            {
+              label: 'VSCode Extension',
+              href: 'https://github.com/tristinrybakVU/shippi-smartcomment-assistant',
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Shippi. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Shippi.`,
     },
     prism: {
       theme: prismThemes.dracula,
