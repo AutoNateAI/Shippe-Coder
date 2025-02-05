@@ -10,20 +10,20 @@
 
 :root {
   /* Light Mode (Default) - Cyberpunk inspired with softer whites */
-  --ifm-background-color: #F0F2F5; /* Softer white background */
-  --ifm-background-surface-color: #E8ECF1; /* Softer surface color */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f5f6f7;
   --ifm-border-color: #DDE1E6;
   --ifm-font-color-base: #1A1A2E;
   --ifm-font-color-secondary: #4A4A6A;
 
   /* Cyberpunk Brand Colors */
-  --ifm-color-primary: #00F5FF; /* Neon Cyan */
-  --ifm-color-primary-dark: #00D6E0;
-  --ifm-color-primary-darker: #00B8C1;
-  --ifm-color-primary-darkest: #009BA3;
-  --ifm-color-primary-light: #1FF7FF;
-  --ifm-color-primary-lighter: #3DF8FF;
-  --ifm-color-primary-lightest: #5CF9FF;
+  --ifm-color-primary: #00f2fe;
+  --ifm-color-primary-dark: #00d9e4;
+  --ifm-color-primary-darker: #00ccd7;
+  --ifm-color-primary-darkest: #00a8b1;
+  --ifm-color-primary-light: #1af3fe;
+  --ifm-color-primary-lighter: #26f4fe;
+  --ifm-color-primary-lightest: #4df5fe;
   
   /* Accent Colors */
   --ifm-color-secondary: #FF00F5; /* Neon Pink */
@@ -80,11 +80,12 @@
 
 /* Dark mode overrides - Cyberpunk Dark */
 [data-theme='dark'] {
-  --ifm-background-color: #0D1117;
-  --ifm-background-surface-color: #1A1A2E;
+  --ifm-background-color: #1a1b1e;
+  --ifm-background-surface-color: #2a2b2e;
   --ifm-border-color: #2A2A4A;
   --ifm-font-color-base: #E6E6FA;
   --ifm-font-color-secondary: #B8B8D0;
+  --ifm-navbar-background-color: #1a1b1e;
 
   /* Shadows for dark mode */
   --ifm-shadow-xs: 0 2px 4px rgba(0,0,0,0.2);

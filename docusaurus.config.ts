@@ -65,7 +65,7 @@ const config: Config = {
 
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
@@ -84,9 +84,10 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Concept Library',
         },
-        {to: '/blog', label: 'Case Studies', position: 'left'},
+        {to: '/prompts', label: 'AI Prompts', position: 'left'},
+        {to: '/blog', label: 'Podcasts', position: 'left'},
         {
           href: 'https://github.com/AutoNateAI/Shippe-Coder',
           label: 'GitHub',
@@ -98,10 +99,10 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Learn',
           items: [
             {
-              label: 'Documentation',
+              label: 'Concept Library',
               to: '/docs/intro',
             },
           ],
@@ -170,6 +171,9 @@ const config: Config = {
       // Apple-specific
       {name: 'apple-mobile-web-app-title', content: 'Shippi'},
       {name: 'apple-mobile-web-app-capable', content: 'yes'},
+    ],
+    customCss: [
+      './src/css/custom.css',
     ],
   } satisfies Preset.ThemeConfig,
 };

@@ -1,0 +1,124 @@
+/* Hero banner */
+.heroSection {
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, #8E54E9 100%);
+  padding: 4rem 0;
+  text-align: center;
+  color: white;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.heroSection p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main content area */
+.promptsContainer {
+  background: var(--ifm-background-color);
+  min-height: 100vh;
+  padding: 3rem var(--ifm-spacing-horizontal);
+}
+
+.promptsContainer h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.promptsContainer > p {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 3rem;
+}
+
+.promptsSection {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.promptsSection h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.promptsSection > p {
+  font-size: 1rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.promptsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card styling */
+.promptCard {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.promptCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.promptCard p {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Download button */
+.downloadButton {
+  display: inline-block;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-background-color);
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.downloadButton:hover {
+  background: var(--ifm-color-primary-darker);
+  text-decoration: none;
+  color: var(--ifm-color-white);
+}
+
+@media screen and (max-width: 996px) {
+  .promptsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promptsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroSection h1 {
+    font-size: 2.5rem;
+  }
+} 
